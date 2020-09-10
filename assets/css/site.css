@@ -1,5 +1,3 @@
-
-
 /* 
 ---------------------------------------------
 Table of contents
@@ -25,7 +23,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 /* 
 ---------------------------------------------
 reset
@@ -96,7 +94,7 @@ figcaption {
 }
 
 .clearfix:after {
-  content: ".";
+  content: '.';
   display: block;
   clear: both;
   visibility: hidden;
@@ -138,13 +136,13 @@ hgroup {
 }
 
 #myclouds canvas {
-	background:#efefef url('http://avirtum.com/demo/clouds-jquery-plugin/assets/images/bg.jpg') top center;
-	background-size:cover;
+  background: #efefef url('http://avirtum.com/demo/clouds-jquery-plugin/assets/images/bg.jpg') top center;
+  background-size: cover;
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -185,7 +183,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 ::selection {
@@ -252,7 +250,7 @@ a.main-button:hover {
 }
 
 a.contact-button:hover {
-  background-color:#2c90a5 !important;
+  background-color: #2c90a5 !important;
 }
 
 button.main-button {
@@ -314,7 +312,7 @@ header
 .logo img {
   width: 80px;
   margin-left: 0px !important;
-   padding : 10px;
+  padding: 10px;
 }
 
 .background-header .main-nav .nav > li:hover > a {
@@ -350,9 +348,6 @@ header
 }
 
 .header-area .main-nav .logo {
-  
- 
- 
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -360,7 +355,6 @@ header
 }
 
 .header-area .main-nav .nav {
-  
   margin-top: 27px;
   margin-left: 20px;
   margin-right: 0px;
@@ -408,7 +402,7 @@ header
 
 .header-area .main-nav .nav li.submenu:after {
   font-family: FontAwesome;
-  content: "\f107";
+  content: '\f107';
   font-size: 12px;
   color: #fff;
   position: absolute;
@@ -430,8 +424,7 @@ header
   transform: translateY(-2em);
   visibility: hidden;
   z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 0.01s;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
 .header-area .main-nav .nav li.submenu ul li {
@@ -457,7 +450,7 @@ header
 }
 
 .header-area .main-nav .nav li.submenu ul li a:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0px;
   height: 40px;
@@ -545,7 +538,7 @@ header
 
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
-  content: "";
+  content: '';
 }
 
 .header-area .main-nav .menu-trigger span {
@@ -717,56 +710,58 @@ header
   }
 }
 
-
-
 /* 
 ---------------------------------------------
 Nos Valeurs
 ---------------------------------------------
 */
 
-.val-container{
- display: flex;
- flex-direction: row;
+.val-container {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
   padding: 40px 40px;
 }
 
-.val-card-container{
-    flex: 1 1 auto;
-    align-items: center;
-    flex-direction: column;
+.val-card-container {
+  flex: 1 1 auto;
+  align-items: center;
+  flex-direction: column;
 }
 
 .picture img {
- max-width: 100%;
+  max-width: 100%;
 }
 
-
-.card-simple{
+.card-simple {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   overflow: hidden;
-  flex : 0 0 23%;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07);
+  flex: 0 0 100%;
+  max-width: unset;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
   /* padding: 40px 20px; */
   max-height: 350px;
-  padding: 5px; 
+  padding: 5px;
 }
 
+@media screen and (min-width: 440px) {
+  .card-simple.col-6 {
+    flex: 0 0 48%;
+  }
+}
 
-
+@media screen and (min-width: 768px) {
+  .card-simple.col-md-3 {
+    flex: 0 0 23%;
+  }
+}
 
 /* 
 ---------------------------------------------
@@ -780,12 +775,12 @@ welcome
   align-items: center;
   justify-content: center;
   /* background-image: url(../images/banner-bg.png); */
-  background: linear-gradient(45deg, rgba(51,88,124,1) 0%, rgba(40,87,134,1) 59%, rgba(44,144,165,1) 100%);
+  background: linear-gradient(45deg, rgba(51, 88, 124, 1) 0%, rgba(40, 87, 134, 1) 59%, rgba(44, 144, 165, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-   height: 100vh; 
-  margin-top: -10vh
+  height: 100vh;
+  margin-top: -10vh;
 }
 
 .welcome-area .header-text {
@@ -812,16 +807,15 @@ welcome
 .welcome-area .header-text p {
   font-weight: 300;
   font-size: 17px;
-  color: #FFF;
+  color: #fff;
   line-height: 30px;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
   position: relative;
 }
 
-
-@media (max-width:1200px) {
-  .full{
+@media (max-width: 1200px) {
+  .full {
     max-width: 100%;
   }
   .welcome-area .header-text {
@@ -847,8 +841,6 @@ welcome
   }
 }
 
-
-
 @media (max-width: 991px) {
   .welcome-area .header-text {
     top: 55% !important;
@@ -873,7 +865,6 @@ welcome
   .welcome-area .header-text {
     top: 60% !important;
     transform: perspective(1px) translateY(-60%) !important;
-
   }
   .welcome-area .header-text h1 {
     font-size: 36px;
@@ -997,15 +988,22 @@ services
 #services {
   position: relative;
   padding: 120px 0px 90px 0px;
-  background: rgb(51,88,124);
-background: -moz-linear-gradient(45deg, rgba(51,88,124,1) 0%, rgba(40,87,134,1) 59%, rgba(44,144,165,1) 100%);
-background: -webkit-linear-gradient(45deg, rgba(51,88,124,1) 0%, rgba(40,87,134,1) 59%, rgba(44,144,165,1) 100%);
-background: linear-gradient(45deg, rgba(51,88,124,1) 0%, rgba(40,87,134,1) 59%, rgba(44,144,165,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33587c",endColorstr="#2c90a5",GradientType=1);
+  background: rgb(51, 88, 124);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(51, 88, 124, 1) 0%,
+    rgba(40, 87, 134, 1) 59%,
+    rgba(44, 144, 165, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(51, 88, 124, 1) 0%,
+    rgba(40, 87, 134, 1) 59%,
+    rgba(44, 144, 165, 1) 100%
+  );
+  background: linear-gradient(45deg, rgba(51, 88, 124, 1) 0%, rgba(40, 87, 134, 1) 59%, rgba(44, 144, 165, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33587c",endColorstr="#2c90a5",GradientType=1);
 }
-
-
-
 
 .service-item {
   cursor: pointer;
@@ -1019,17 +1017,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33587c",endCo
   position: relative;
 }
 
-.service-item:hover .val-card-hiddentext{
-  top: 0px; 
+.service-item:hover .val-card-hiddentext {
+  top: 0px;
 }
 
 .val-card-hiddentext {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 100%;  
-  transition : top 0.5s ease-out;
-  background :rgba(51,88,124,1);
+  top: 100%;
+  transition: top 0.5s ease-out;
+  background: rgba(51, 88, 124, 1);
   padding: 20px;
   color: #fff !important;
   right: 0%;
@@ -1038,7 +1036,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33587c",endCo
 }
 
 .val-card-hiddentext > p {
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 @media screen and (max-width: 920px) {
@@ -1166,9 +1164,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33587c",endCo
     display: none !important;
   }
 }
-
-
-
 
 /*
 ---------------------------------------------
@@ -1302,10 +1297,20 @@ contact
 
 .contact-form {
   padding: 100px;
-  background: rgb(51,88,124);
-  background: -moz-linear-gradient(45deg, rgba(51,88,124,1) 0%, rgba(40,87,134,1) 59%, rgba(44,144,165,1) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(51,88,124,1) 0%, rgba(40,87,134,1) 59%, rgba(44,144,165,1) 100%);
-  background: linear-gradient(45deg, rgba(51,88,124,1) 0%, rgba(40,87,134,1) 59%, rgba(44,144,165,1) 100%);
+  background: rgb(51, 88, 124);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(51, 88, 124, 1) 0%,
+    rgba(40, 87, 134, 1) 59%,
+    rgba(44, 144, 165, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(51, 88, 124, 1) 0%,
+    rgba(40, 87, 134, 1) 59%,
+    rgba(44, 144, 165, 1) 100%
+  );
+  background: linear-gradient(45deg, rgba(51, 88, 124, 1) 0%, rgba(40, 87, 134, 1) 59%, rgba(44, 144, 165, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33587c",endColorstr="#2c90a5",GradientType=1);
   display: flex;
   justify-content: center;
